@@ -1,5 +1,6 @@
 import React,{useEffect} from "react"
 import {Link} from "react-router-dom"
+import senarios from "../data/Senarios.json"
 
 export default function Start(){
 
@@ -9,6 +10,10 @@ export default function Start(){
             "Mencius":0,
             "Lao Zi" :0,
             "Sankara":0,
+        }));
+        localStorage.setItem('senarios', JSON.stringify({
+            "currSenarioNo":0,
+            "totalSenarios":Object.keys(senarios).length
         }));
     },[]);/*empty array to call use effect function only once*/
 
