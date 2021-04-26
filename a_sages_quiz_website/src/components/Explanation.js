@@ -1,23 +1,15 @@
 import React from "react"
 import {Link} from "react-router-dom"
-import Button from '@material-ui/core/Button'
 import {makeStyles, ThemeProvider, createMuiTheme} from '@material-ui/core/styles'
 import {orange,green} from '@material-ui/core/colors'
 import Typography from "@material-ui/core/Typography"
 import 'fontsource-roboto'
 import Grid from '@material-ui/core/Grid'
-import CssBaseline from '@material-ui/core/CssBaseline';
 import AppBar from'@material-ui/core/AppBar'
 import '../styling/style.css'
 import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import Toolbar from '@material-ui/core/Toolbar';
 import Container from '@material-ui/core/Container';
-import Paper from '@material-ui/core/Paper'
-import Image from '../images/horsey.PNG';
-import StartImage from '../images/vinegar_taste.jpg';
 import Menke from '../images/menke.jpg';
 import LaoziImage from '../images/laozi.png';
 import Kongzi from '../images/kongzi.jpg'
@@ -137,7 +129,6 @@ export const theme = createMuiTheme({
 })
 
 export default function Explanation(option){
-    var scores = localStorage.getItem("sageScore")
     var senariosTracker = localStorage.getItem("senarios")
     var currSenarioNo = parseInt(option.location.state.senarioNo)
     var totalSenarios = parseInt(JSON.parse(senariosTracker).totalSenarios)
