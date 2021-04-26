@@ -51,6 +51,8 @@ const useStyles = makeStyles((theme) => ({
     height: '100%',
     display: 'flex',
     flexDirection: 'column',
+    backgroundColor: orange[500],
+    color: 'white'
   },
   cardContent: {
     flexGrow: 1,
@@ -111,7 +113,8 @@ export default function Question({match}) {
                                     "senarioNo":senarioNo,
                                     "optionSage":item.optionSage,
                                     "optionQuote": item.optionQuote,
-                                    "optionText": item.optionText}}} onClick={()=> updateSageScore(item.optionSage,senarioNo)}>
+                                    "optionText": item.optionText}}} onClick={()=> updateSageScore(item.optionSage,senarioNo)}
+                                    style={{ textDecoration: 'none' }}>
                                     
                                     <Card className={classes.card} >
                                     <CardContent className={classes.cardContent}>

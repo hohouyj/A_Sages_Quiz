@@ -58,6 +58,10 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'center',
     backgroundColor: 'pink',
     },
+    introText:{
+            backgroundColor: theme.palette.background.paper,
+            padding: theme.spacing(2, 2, 2),
+    }
 }));
 
 const theme = createMuiTheme({
@@ -104,9 +108,19 @@ export default function Start(){
 
                         <Grid item direction='column' style={{minHeight:"3vh"}}>
                         </Grid>
-
-                        <Button href="/senario/1" variant="contained" color="primary" size="large" fullWidth > 
-                        Start
+                        <Typography className={classes.introText} component="h2" variant="h6" align='center' >
+                        In the annals of time many Sages have walked this world.
+                        <br/>
+                        <br/>
+                        Each civilization has had its fair share of Sages who spread their teachings far and wide, and consequently left their mark on history itself.
+                        <br/>
+                        <br/>
+                        With the dilution of their influence until the modern day, the marks they left behind are nevertheless still present, fragmented though they may be. So how similar to a Sage are you? Come try out this quiz and discover for yourself how sagely you are!
+                        </Typography>
+                        <Grid item direction='column' style={{minHeight:"3vh"}}>
+                        </Grid>
+                        <Button href="/senario/1" variant="contained" color="primary" size="large"  > 
+                        Start Quiz
                         </Button>
                     </Grid>
                 </div>

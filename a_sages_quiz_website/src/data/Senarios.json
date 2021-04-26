@@ -13,13 +13,13 @@
         "options":[
             {
                 "optionText":"Take charge of the project, calling for inputs and keeping everyone on track",
-                "optionQuote":"senario 1 option 1 quote",
+                "optionQuote":"",
                 "optionSage":"non_sage",
-                "optionExplanation":"you are a non sage"
+                "optionExplanation":"While taking charge is an approach that does have its benefits, and is often appreciated in groups lacking initiative, it is not an approach advocated by Lao Tzu. This is because your efforts to initiate may backfire, compared to a relatively passive approach in which you respond only when required (and hence your responses are always timely)"
             },
             {
                 "optionText":"Adopt a “Wait-and-See” approach. Let the others initiate, and the group dynamics to form on their own, and respond only when required, while doing what is needed",
-                "optionQuote":"Laozi Chapter 2 Lines 12-20: That is why The sage handles affairs by Non-doing, And practices teaching by not speaking. He lets all things happen but does not initiate, Lets them grow but does not possess, Gets things done but does not take advantage, Achieves his goal but claims no credit. Just because he claims no credit, His credit does not go away.",
+                "optionQuote":"Laozi Chapter 2 Lines 12-20: ##“That is why The sage handles affairs by Non-doing,##And practices teaching by not speaking.##He lets all things happen but does not initiate,##Lets them grow but does not possess,##Gets things done but does not take advantage, Achieves his goal but claims no credit.##Just because he claims no credit, His credit does not go away.",
                 "optionSage":"Laozi",
                 "optionExplanation":"The sage acts by not initiating. In doing so, everything falls into place. By responding only when spoken to, your response is always timely, and your work always in line with the requirements of others. By not initiating, there can be no opposition to what you do, because it is always in response to them, not due to your own personal desires."
             }            
@@ -33,13 +33,13 @@
                 "optionText":"A Meritocratic system, in which the top research papers, essays, projects, etc. from each subject and co-curricular activity are showcased around the school. Through this you hope to develop a culture of inspiration in which people learn from one another.",
                 "optionQuote":"",
                 "optionSage":"non_sage",
-                "optionExplanation":"you are a non sage"
+                "optionExplanation":"The meritocratic system performs well on many metrics, and is indeed a nice place for those who love excitement, growth, new opportunities and development. However, Lao Tzu regards such systems to be a cause for many social problems, since the valuing of one group of people necessarily means the putting down of other groups, eg. students who don’t perform well."
             },
             {
                 "optionText":"A Support system, in which every student is supported equally to do whatever they wish. School ends earlier, and students are encouraged to go home rather than stay in school. The teachers are encouraged to spend less time on the curriculum, and more about what brings contentment to their life.",
                 "optionQuote":"Laozi Chapter 3 Lines 1-2, 7-15: “Do not glorify the talented So the common people will not contend”, “Thus the sage through his governance Keeps their minds empty, Their bellies full, Their wills weak, Their bones strong, He always keeps his people away from knowledge and desire,So that the knowledgeable ones do not dare to act. Apply Non-doing And there is nothing that he cannot govern”",
                 "optionSage":"Laozi",
-                "optionExplanation":"This option is Taoist because it gives the students what they need in their life - the support they need to flourish - rather than aiming to increase their knowledge and desire. By not glorifying the talented, no group of people are praised over another group, and so the school will become a peaceful place free from competition. And a peaceful place is one in which Lao Tzu approves."}            
+                "optionExplanation":"This option is Taoist because it gives the students what they need in their life - the support they need to flourish - rather than aiming to increase their knowledge and desire. By not glorifying the talented, no group of people are praised over another group, and so the school will become a peaceful place free from competition. And a peaceful place is one in which Lao Tzu approves, and would be the most stable in the long run."}            
             ]
     },
     {
@@ -48,7 +48,7 @@
         "options":[
             {
                 "optionText":"Report your family to them",
-                "optionQuote":"Dao De Jing Chapter 5 Lines 1-4: “Heaven and Earth are not humane, They treat all things like straw dogs. The sage is not humane, He treats all people like straw dogs”",
+                "optionQuote":"Dao De Jing Chapter 5 Lines 1-4: “Heaven and Earth are not humane, They treat all things like straw dogs. The sage is not humane, He treats all people like straw dogs”Dao De Jing Chapter 8 Lines 1-4:“The highest good is like water: Water brings good to all things and does not contend; It goes to places which most people detest And is therefore akin to Dao”",
                 "optionSage":"Laozi",
                 "optionExplanation":"The sage regards all beings impartially. Thus they would report their family, without differentiating them from others. It can even be said to be for their own good, since admitting to a crime does result in lighter punishments."
             },

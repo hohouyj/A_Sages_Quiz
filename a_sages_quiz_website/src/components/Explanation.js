@@ -36,7 +36,7 @@ export const useStyles = makeStyles((theme) => ({
         paddingTop: theme.spacing(8),
         paddingBottom: theme.spacing(8),
         flexDirection: 'row',
-        backgroundImage: `url(${Image})`,
+        //backgroundImage: `url(${Image})`,
         backgroundRepeat: 'repeat',
         backgroundColor: theme.palette.type === 'light' ? theme.palette.grey[50] : theme.palette.grey[900],
         backgroundSize: 'cover',
@@ -46,7 +46,8 @@ export const useStyles = makeStyles((theme) => ({
         height: '100%',
         display: 'flex',
         flexDirection: 'column',
-        backgroundColor: 'transparent'
+        backgroundColor: orange[500],
+        color: 'white'
       },
       cardMedia: {
         paddingTop: '56.25%', // 16:9
@@ -167,10 +168,23 @@ export default function Explanation(option){
                     <div className={classes.heroContent}>
                     <Container maxWidth="md">
                         <Typography component="h2" variant="h4" align="center" color="textPrimary" gutterBottom>
-                        {(option.location.state.optionSage==='non_sage')?'Not Sagely': option.location.state.optionSage} 
+                        {(option.location.state.optionSage==='non_sage')?'Not Sagely': 'The Sage Embodied: '+option.location.state.optionSage} 
                         </Typography>
                         <Typography variant="h5" align="Left" color="textSecondary" paragraph>
-                        {(option.location.state.optionSage==='non_sage')?'': option.location.state.optionQuote}
+                        {/*(option.location.state.optionSage==='non_sage')?'': option.location.state.optionQuote*/}
+
+                        { option.location.state.optionQuote.split("##").map((item, key) => {return(
+                            <>
+                            {item}
+                            <br>
+                            {}
+                            </br>
+                            </>
+                            )})}
+
+
+
+                        
                         </Typography>
                     </Container>
                     </div>
@@ -181,12 +195,12 @@ export default function Explanation(option){
                    
                         <Grid item xs={12} sm={12} md={12}>
 
-                        <Link to={{pathname: (currSenarioNo>=totalSenarios) ? '/end':("/senario/"+nextSenarioNo)}} onClick={()=> changeSenarioNo(nextSenarioNo)}>
+                        <Link to={{pathname: (currSenarioNo>=totalSenarios) ? '/end':("/senario/"+nextSenarioNo)}} onClick={()=> changeSenarioNo(nextSenarioNo)} style={{ textDecoration: 'none' }}>
                             
-                            <Card >
+                            <Card className={classes.card}>
                             <CardContent >
                                 <Typography gutterBottom variant="h5" component="h2">
-                                {(option.location.state.optionSage==='non_sage')?'The option choosen was not sagely.': option.location.state.optionExplanation} 
+                                {(option.location.state.optionSage==='non_sage')?'The option chosen was not sagely.': option.location.state.optionExplanation} 
                                 </Typography>
                             </CardContent>
                             </Card>

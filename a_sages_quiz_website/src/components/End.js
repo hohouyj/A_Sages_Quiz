@@ -123,7 +123,10 @@ const theme = createMuiTheme({
  * ToDo add a way to show the scores from the non_sage:[] to a number/number
  * retrive all senarios and options for each sage in a summary
  */
-
+ function countUnique(iterable) {
+    return new Set(iterable).size;
+  }
+  
 
 
 
@@ -131,9 +134,10 @@ const theme = createMuiTheme({
 export default function End(){
     var scores = localStorage.getItem("sageScore")
     const classes = useStyles();
-    var scoreMencius = JSON.parse(scores)['Mencius'].length;
-    var scoreLaozi = JSON.parse(scores)['Laozi'].length;
-    var non_sage = JSON.parse(scores)['non_sage'].length;
+    var scoreMencius = countUnique(JSON.parse(scores)['Mencius']);
+    var scoreLaozi = countUnique(JSON.parse(scores)['Laozi']);
+    var non_sage = countUnique(JSON.parse(scores)['non_sage']);
+    var totalScore = (scoreLaozi+scoreMencius)/(scoreLaozi+scoreMencius+non_sage)
     return(
 
         <Grid container component="main" className={classes.root}>
@@ -147,11 +151,15 @@ export default function End(){
                         <Typography component="h1" variant="h3" align='center' fullWidth >
                         Total Score: {scoreLaozi+scoreMencius}/{scoreLaozi+scoreMencius+non_sage}
                         </Typography>
-
+                        <Typography component="h2" variant="h4" align='center' fullWidth >
+                        {(totalScore>=1)?'You are a true sage.':''}
+                        {(totalScore>=0.8 && totalScore<1) ?'You are sage.':''}
+                        {(totalScore>=0.7 && totalScore<0.8) ? 'You are almost a sage.':''}
+                        {(totalScore>=0.5 && totalScore<0.7) ? 'You are sage-like.':''}
+                        {(totalScore<0.5) ? 'You are not a sage, Try Again?':''}
+                        </Typography>
                         <Grid item className={classes.Laozi} direction='column' style={{minHeight:"3vh"}}>
-                            <Card className={classes.Card}>
-                            poggers {scoreLaozi} {scoreMencius}
-                            </Card>
+
                         </Grid>
                         <Container className={classes.cardGrid} maxWidth="md">
                         
@@ -166,7 +174,6 @@ export default function End(){
                                         Laozi Score: {scoreLaozi}/{scoreLaozi+scoreMencius+non_sage}
                                     </Typography>
                                     <Typography gutterBottom variant="h5" component="h2">
-                                        Options Choosen:
                                         {}
                                     </Typography>
                                 </CardContent>
@@ -181,7 +188,6 @@ export default function End(){
                                         Mencius Score: {scoreMencius}/{scoreLaozi+scoreMencius+non_sage}
                                     </Typography>
                                     <Typography gutterBottom variant="h5" component="h2">
-                                        Options Choosen:
                                         {}
                                     </Typography>
                                 </CardContent>
@@ -197,7 +203,6 @@ export default function End(){
                     </Grid>
                 </div>
             </Grid>
-            
             </ThemeProvider>
         </Grid>
     
