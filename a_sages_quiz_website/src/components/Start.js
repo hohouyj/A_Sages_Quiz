@@ -3,9 +3,6 @@ import {Link} from "react-router-dom"
 import senarios from "../data/Senarios.json"
 import '../styling/style.css'
 import Button from '@material-ui/core/Button'
-import SaveIcon from '@material-ui/icons/Save'
-import ButtonGroup from '@material-ui/core/ButtonGroup'
-import NextIcon from '@material-ui/icons/NavigateNext'
 import {makeStyles, ThemeProvider, createMuiTheme} from '@material-ui/core/styles'
 import {orange,green} from '@material-ui/core/colors'
 import Typography from "@material-ui/core/Typography"
@@ -17,7 +14,6 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import AppBar from'@material-ui/core/AppBar'
 import Toolbar from'@material-ui/core/Toolbar'
 import IconButton from'@material-ui/core/IconButton'
-import Menu from '@material-ui/icons/Menu'
 import Box from '@material-ui/core/Box'
 import Startimage from '../images/vinegar_taste.jpg'
 
@@ -82,17 +78,25 @@ const theme = createMuiTheme({
 
 export default function Start(){
     const classes = useStyles();
+    
     useEffect(()=>{
+        var randomnumber = Math.floor(Math.random()*(Object.keys(senarios).length-1))
         localStorage.setItem('sageScore', JSON.stringify({
             "non_sage":[],
             "Mencius":[],
-            "Laozi" :[]
+            "Laozi" :[],
+            "Confucius":[],
+            "MenciusAndLaozi":[]
         }));
         localStorage.setItem('senarios', JSON.stringify({
-            "currSenarioNo":1,
-            "totalSenarios":Object.keys(senarios).length-1
+            "currSenarioNo":999,
+            "totalSenarios":Object.keys(senarios).length-1,
+            'completedSenarios':[]
         }));
     },[]);/*empty array to call use effect function only once*/
+
+    var currSenarioNo = JSON.parse(localStorage.getItem('senarios')).currSenarioNo
+
     return(
         <Grid container component="main" className={classes.root}>
             <ThemeProvider theme={theme}>
@@ -119,7 +123,7 @@ export default function Start(){
                         </Typography>
                         <Grid item direction='column' style={{minHeight:"3vh"}}>
                         </Grid>
-                        <Button href="/senario/1" variant="contained" color="primary" size="large"  > 
+                        <Button href={"/senario"} variant="contained" color="primary" size="large"  > 
                         Start Quiz
                         </Button>
                     </Grid>

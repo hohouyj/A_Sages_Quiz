@@ -1,10 +1,6 @@
 import React from "react"
-import {Link} from "react-router-dom"
 import '../styling/style.css'
 import Button from '@material-ui/core/Button'
-import SaveIcon from '@material-ui/icons/Save'
-import ButtonGroup from '@material-ui/core/ButtonGroup'
-import NextIcon from '@material-ui/icons/NavigateNext'
 import {makeStyles, ThemeProvider, createMuiTheme} from '@material-ui/core/styles'
 import {orange,green} from '@material-ui/core/colors'
 import Typography from "@material-ui/core/Typography"
@@ -13,15 +9,13 @@ import Container from '@material-ui/core/Container'
 import Paper from '@material-ui/core/Paper'
 import Grid from '@material-ui/core/Grid'
 import CssBaseline from '@material-ui/core/CssBaseline';
-import AppBar from'@material-ui/core/AppBar'
-import Toolbar from'@material-ui/core/Toolbar'
-import IconButton from'@material-ui/core/IconButton'
-import Menu from '@material-ui/icons/Menu'
-import Box from '@material-ui/core/Box'
 import Startimage from '../images/vinegar_taste.jpg'
 import Card from '@material-ui/core/Card'
 import CardContent from '@material-ui/core/CardContent'
-
+import Menke from '../images/menke.jpg';
+import LaoziImage from '../images/laozi.png';
+import Kongzi from '../images/kongzi.jpg'
+import Chad from '../images/chad1.jpg'
 
 
 const useStyles = makeStyles((theme) => ({
@@ -136,8 +130,13 @@ export default function End(){
     const classes = useStyles();
     var scoreMencius = countUnique(JSON.parse(scores)['Mencius']);
     var scoreLaozi = countUnique(JSON.parse(scores)['Laozi']);
+    var scoreMandL = countUnique(JSON.parse(scores)['MenciusAndLaozi']);
+    var scoreKongzi = countUnique(JSON.parse(scores)['Confucius']);
     var non_sage = countUnique(JSON.parse(scores)['non_sage']);
-    var totalScore = (scoreLaozi+scoreMencius)/(scoreLaozi+scoreMencius+non_sage)
+    var maxScore = scoreLaozi+scoreMencius+non_sage+scoreKongzi+scoreMandL
+    var totalScore = (maxScore-non_sage)/(maxScore)
+    var laoziQuestions = 12
+    var menkeQuestions = 13
     return(
 
         <Grid container component="main" className={classes.root}>
@@ -149,7 +148,7 @@ export default function End(){
                     <Grid container justify = "center" direction='column' style={{minHeight:"80vh"}}>
 
                         <Typography component="h1" variant="h3" align='center' fullWidth >
-                        Total Score: {scoreLaozi+scoreMencius}/{scoreLaozi+scoreMencius+non_sage}
+                        Total Score: {maxScore-non_sage}/{maxScore}
                         </Typography>
                         <Typography component="h2" variant="h4" align='center' fullWidth >
                         {(totalScore>=1)?'You are a true sage.':''}
@@ -170,11 +169,9 @@ export default function End(){
                                 
                                 <Card >
                                 <CardContent >
-                                    <Typography component="h2" variant="h4" align="center" color="textPrimary" gutterBottom>
-                                        Laozi Score: {scoreLaozi}/{scoreLaozi+scoreMencius+non_sage}
-                                    </Typography>
-                                    <Typography gutterBottom variant="h5" component="h2">
-                                        {}
+                                <img src={LaoziImage} alt="" class='media'/>
+                                    <Typography component="h2" variant="h4" align="center" color="textPrimary" >
+                                        Laozi Score: {scoreLaozi+scoreMandL}/{laoziQuestions}
                                     </Typography>
                                 </CardContent>
                                 </Card>
@@ -184,16 +181,27 @@ export default function End(){
                                 
                                 <Card >
                                 <CardContent >
-                                    <Typography component="h2" variant="h4" align="center" color="textPrimary" gutterBottom>
-                                        Mencius Score: {scoreMencius}/{scoreLaozi+scoreMencius+non_sage}
-                                    </Typography>
-                                    <Typography gutterBottom variant="h5" component="h2">
-                                        {}
+                                <img src={Menke} alt="" class='media'/>
+                                    <Typography component="h2" variant="h4" align="center" color="textPrimary" >
+                                        Mencius Score: {scoreMencius+scoreMandL}/{menkeQuestions}
                                     </Typography>
                                 </CardContent>
                                 </Card>
                             </Grid>
 
+                            {(scoreKongzi>=2)?
+                              <Grid item xs={12} sm={12} md={12}>  
+                                <Card >
+                                <CardContent >
+                                  <img src={Kongzi} alt="" class='media'/>
+                                    <Typography component="h2" variant="h4" align="center" color="textPrimary" >
+                                        You found the both Confucian Answers!!
+                                    </Typography>
+                                    
+                                </CardContent>
+                                </Card>
+                                 
+                            </Grid>:''}
 
                         </Grid>
                         </Container>

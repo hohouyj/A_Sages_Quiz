@@ -1,19 +1,12 @@
 import React from 'react';
 import AppBar from '@material-ui/core/AppBar';
-import Button from '@material-ui/core/Button';
-import CameraIcon from '@material-ui/icons/PhotoCamera';
 import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import CssBaseline from '@material-ui/core/CssBaseline';
 import Grid from '@material-ui/core/Grid';
-import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import {updateSageScore , decideContent} from '../services/logic'
 import {makeStyles, ThemeProvider, createMuiTheme} from '@material-ui/core/styles'
-import Paper from '@material-ui/core/Paper'
 import orange from '@material-ui/core/colors/orange'
 import green from '@material-ui/core/colors/green'
 import {Link} from "react-router-dom"
@@ -36,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
   },
   heroContent: {
     backgroundColor: theme.palette.background.paper,
-    padding: theme.spacing(8, 0, 6),
+    padding: theme.spacing(5, 0, 3),
     flexGrow: 1,
   },
   heroButtons: {
@@ -72,19 +65,20 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function Question({match}) {
-
-    let [ senario, senarioNo, optionsArray ] = [...decideContent(match.params.id)];
+   
+    let [ senario, senarioNo, optionsArray ] = [...decideContent()];
+    var senariosTracker = localStorage.getItem("senarios")
     console.log(optionsArray);
-
     const classes = useStyles();
+    var displaySenarioNo = new Set(JSON.parse(senariosTracker).completedSenarios).size
     return(
 
         <React.Fragment>
             <ThemeProvider theme={theme}>
-                
+            
                     <AppBar position="relative">
                         <Typography variant="h6" color="inherit" noWrap>
-                        Scenario {senarioNo}
+                        Scenario {displaySenarioNo}
                         </Typography>
                     </AppBar>
                     <main>
@@ -92,10 +86,17 @@ export default function Question({match}) {
                     <div className={classes.heroContent}>
                     <Container maxWidth="md">
                         <Typography component="h2" variant="h4" align="center" color="textPrimary" gutterBottom>
-                        Scenario {senarioNo}
+                        Scenario {displaySenarioNo}
                         </Typography>
                         <Typography variant="h5" align="Left" color="textSecondary" paragraph>
-                        {senario}
+                        {senario.split("##").map((item, key) => {return(
+                            <>
+                            {item}
+                            <br>
+                            {}
+                            </br>
+                            </>
+                            )})}
                         </Typography>
                     </Container>
                     </div>
@@ -110,7 +111,7 @@ export default function Question({match}) {
                                 <Link to={{ pathname: '/explanation',
                                 state: {
                                     "optionExplanation": item.optionExplanation,
-                                    "senarioNo":senarioNo,
+                                    "senarioNo":displaySenarioNo,
                                     "optionSage":item.optionSage,
                                     "optionQuote": item.optionQuote,
                                     "optionText": item.optionText}}} onClick={()=> updateSageScore(item.optionSage,senarioNo)}

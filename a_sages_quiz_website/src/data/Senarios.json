@@ -1,370 +1,380 @@
-[    
-    {
-        "senario":"Error",
-        "senarioNo":999,
-        "options":[
-            {"optionText":"Error option 1","optionQuote":"Error option 1 quote", "optionSage":"Sage_1", "optionExplanation":"Error option1 explanation"},
-            {"optionText":"Error option 2","optionQuote":"Error option 2 quote", "optionSage":"Sage_2", "optionExplanation":"Error option2 explanation"}            
-            ]
-    },
-    {
-        "senario":"For your final year project, you are placed into a group where you don’t know anyone. From what you know, the project is very time-intensive and will require proper project management to complete well. To ensure the success of the project, you:",
-        "senarioNo":1,
-        "options":[
-            {
-                "optionText":"Take charge of the project, calling for inputs and keeping everyone on track",
-                "optionQuote":"",
-                "optionSage":"non_sage",
-                "optionExplanation":"While taking charge is an approach that does have its benefits, and is often appreciated in groups lacking initiative, it is not an approach advocated by Lao Tzu. This is because your efforts to initiate may backfire, compared to a relatively passive approach in which you respond only when required (and hence your responses are always timely)"
-            },
-            {
-                "optionText":"Adopt a “Wait-and-See” approach. Let the others initiate, and the group dynamics to form on their own, and respond only when required, while doing what is needed",
-                "optionQuote":"Laozi Chapter 2 Lines 12-20: ##“That is why The sage handles affairs by Non-doing,##And practices teaching by not speaking.##He lets all things happen but does not initiate,##Lets them grow but does not possess,##Gets things done but does not take advantage, Achieves his goal but claims no credit.##Just because he claims no credit, His credit does not go away.",
-                "optionSage":"Laozi",
-                "optionExplanation":"The sage acts by not initiating. In doing so, everything falls into place. By responding only when spoken to, your response is always timely, and your work always in line with the requirements of others. By not initiating, there can be no opposition to what you do, because it is always in response to them, not due to your own personal desires."
-            }            
-            ]
-    },
-    {
-        "senario":"As part of a new policy, students may now influence the educational approach taken by the institution. As the head of the student body, 2 policies come into mind, each with its own merit and demerit. Which do you propose to the school?",
-        "senarioNo":2,
-        "options":[
-            {
-                "optionText":"A Meritocratic system, in which the top research papers, essays, projects, etc. from each subject and co-curricular activity are showcased around the school. Through this you hope to develop a culture of inspiration in which people learn from one another.",
-                "optionQuote":"",
-                "optionSage":"non_sage",
-                "optionExplanation":"The meritocratic system performs well on many metrics, and is indeed a nice place for those who love excitement, growth, new opportunities and development. However, Lao Tzu regards such systems to be a cause for many social problems, since the valuing of one group of people necessarily means the putting down of other groups, eg. students who don’t perform well."
-            },
-            {
-                "optionText":"A Support system, in which every student is supported equally to do whatever they wish. School ends earlier, and students are encouraged to go home rather than stay in school. The teachers are encouraged to spend less time on the curriculum, and more about what brings contentment to their life.",
-                "optionQuote":"Laozi Chapter 3 Lines 1-2, 7-15: “Do not glorify the talented So the common people will not contend”, “Thus the sage through his governance Keeps their minds empty, Their bellies full, Their wills weak, Their bones strong, He always keeps his people away from knowledge and desire,So that the knowledgeable ones do not dare to act. Apply Non-doing And there is nothing that he cannot govern”",
-                "optionSage":"Laozi",
-                "optionExplanation":"This option is Taoist because it gives the students what they need in their life - the support they need to flourish - rather than aiming to increase their knowledge and desire. By not glorifying the talented, no group of people are praised over another group, and so the school will become a peaceful place free from competition. And a peaceful place is one in which Lao Tzu approves, and would be the most stable in the long run."}            
-            ]
-    },
-    {
-        "senario":"You discover that your family has flouted the Stay-Home-Notice rules, violating the COVID-19 pandemic laws. The hotel is currently beginning investigations, you decide to:",
-        "senarioNo":3,
-        "options":[
-            {
-                "optionText":"Report your family to them",
-                "optionQuote":"Dao De Jing Chapter 5 Lines 1-4: “Heaven and Earth are not humane, They treat all things like straw dogs. The sage is not humane, He treats all people like straw dogs”Dao De Jing Chapter 8 Lines 1-4:“The highest good is like water: Water brings good to all things and does not contend; It goes to places which most people detest And is therefore akin to Dao”",
-                "optionSage":"Laozi",
-                "optionExplanation":"The sage regards all beings impartially. Thus they would report their family, without differentiating them from others. It can even be said to be for their own good, since admitting to a crime does result in lighter punishments."
-            },
-            {
-                "optionText":"Not report your family to them",
-                "optionQuote":"",
-                "optionSage":"non_sage",
-                "optionExplanation":"you are a non sage"
-            }            
-            ]
-    },
-    {
-        "senario":"You find yourself being disliked by the majority of your class - you do not mix well with them and their conversation topics do not interest you - you decide to:",
-        "senarioNo":4,
-        "options":[
-            {
-                "optionText":"Ignore them and work hard. Distance yourself from them as you develop your skills and expertise.",
-                "optionQuote":"",
-                "optionSage":"non_sage",
-                "optionExplanation":"you are a non sage"
-            },
-            {
-                "optionText":"Mix with your fellow ostracised classmates. Remain amicable and support whoever comes to you for help.",
-                "optionQuote":"Dao De Jing Chapter 8",
-                "optionSage":"Laozi",
-                "optionExplanation":"The sage is akin to Dao in that he resides in places which most people detest. Yet, he maintains a gentle countenance, speaking in good faith, acting with good timing, and not competing with others. Thus the 2nd answer which does not discriminate is the Taoist Sage’s answer."
-            }            
-            ]
-    },
-    {
-        "senario":"When you were young, you sought to live a life of comfort, and to do so you worked very hard. After many years, you have finally become a millionaire, and have earned enough to live comfortably for the rest of your life. You decide to:",
-        "senarioNo":5,
-        "options":[
-            {
-                "optionText":"Continue working",
-                "optionQuote":"",
-                "optionSage":"non_sage",
-                "optionExplanation":"you are a non sage"
-            },
-            {
-                "optionText":"Retire",
-                "optionQuote":"Dao De Jing Chapter 9 Lines 9-10 “Retire after achieving one’s goal - That is the Dao of Heaven",
-                "optionSage":"Laozi",
-                "optionExplanation":"Contentment is one of the hallmarks of Daoist philosophy. Retiring after you achieve your goal is one example of this. To continue working defeats the purpose, since work was not your goal to begin with."
-            }            
-            ]
-    },
-    {
-        "senario":"In your team there is a guy who mixes well with everyone. When looking at the work he has done, you realize he doesn’t do much except talk to the Professors, and keep the energy going in the group to do the homework. You know that a submission is coming up, and that the work will be a challenge to complete. You have a friend who has always wanted to join your group, and since your teacher allows you to change group members between homeworks, you decide to:",
-        "senarioNo":6,
-        "options":[
-            {
-                "optionText":"Replace him with your friend",
-                "optionQuote":"",
-                "optionSage":"non_sage",
-                "optionExplanation":"you are a non sage"
-            },
-            {
-                "optionText":"Keep him around",
-                "optionQuote":"Dao De Jing Chapter 11 “Nothingness brings usefulness”",
-                "optionSage":"Laozi",
-                "optionExplanation":"While he appears to be doing nothing quantitative, he acts as the centre holding the group dynamics together. Removing him would cause the group to fall apart, and is thus not the Sagely course of action."
-            }            
-            ]
-    },
-    {
-        "senario":"Due to various reasons, you were transferred into another group. Upon being with the group, you realize they have various issues with group dynamics and work allocation. You decide to:",
-        "senarioNo":7,
-        "options":[
-            {
-                "optionText":"Take charge and gather each member’s strengths and opinions, before dividing the work accordingly",
-                "optionQuote":"",
-                "optionSage":"non_sage",
-                "optionExplanation":"you are a non sage"
-            },
-            {
-                "optionText":"Ask around and become familiar with the different areas of work that need to be done, helping out wherever you can, without mentioning the group’s issues",
-                "optionQuote":"Dao De Jing Chapter 13 Lines 8-17 “The reason why I have disaster Is because I have a self. If I don’t have a self, What disaster do I have? Therefore, If you care about yourself for the sake of the world, You may be charged with the world; If you love yourself for the sake of the world, You may be entrusted with the world”",
-                "optionSage":"Laozi",
-                "optionExplanation":"To Laozi, being a leader means to fully take care of oneself and try one’s best. Here, the group’s welfare is part of your own welfare, and to take care of yourself is to do your best to fulfil your role first, before helping others. Rather than attempting to take charge and address the issues from the start, it is better to do your best, and only after which attempt to bring the rest of the group together. In the process, you may even become the leader of the group, by virtue of doing your own part well and taking care of yourself."
-            }            
-            ]
-    },
-    {
-        "senario":"You have landed a stable job with mediocre pay, with little future career advancement prospects. Worrying about your future, you ask 2 of your friends to give you advice. One tells you that the key to success is by putting great effort into hustling, by working on yourself and equipping yourself with a wide variety of skill sets, then pushing yourself every step of the way. He says that it is best to use this job as a stepping stone for greener pastures elsewhere. The other tells you that stability is hard to find. He says not to worry too much or stress over these things, and simply do what you want to do. Rather than hustling, you ought to take care of yourself, remain content, and think about it only when you need to.",
-        "senarioNo":8,
-        "options":[
-            {
-                "optionText":"Hustle",
-                "optionQuote":"",
-                "optionSage":"non_sage",
-                "optionExplanation":"you are a non sage"
-            },
-            {
-                "optionText":"Relax",
-                "optionQuote":"Dao De Jing Chapter 15 “Who could calm the muddy till it slowly clears? Who could stir the quiet till it slowly revives? Those who practice this Dao do not seek fullness. Because they do not seek fullness They can always rejuvenate themselves”",
-                "optionSage":"Laozi",
-                "optionExplanation":"The sage, while careful in his conduct, does not overexert and overextend. In his relaxed approach towards life, in which he does not worry or go beyond what he needs to do, he remains content wherever he is. It is this contentment, where they “do not seek fullness”, that they “can always rejuvenate themselves”, and so lead a good life and do what they need to do."
-            }            
-            ]
-    },
-    {
-        "senario":"After living in the same country for so long, you have the option to move to another country. Of the 2 countries in which your family is happy to move to, they are each radically different in their approach to life. Country 1: A meritocratic society. Everywhere the achievements of great people are shared, and competition abounds. Free education is provided to all, and everybody has the chance to succeed. Social safety nets are present for those who fall through the cracks, and they are rated as having one of the highest standards of living in the entire world. Country 2: A stable society, though slightly backward. There are places of all kinds in this country, from small cities, to villages and farms by the countryside. People follow all manner of religions, and the government supports all its citizens equally. The government does not laud the achievements of anyone, but simply ensures that everyone is well fed with no need to worry about their livelihood.",
-        "senarioNo":9,
-        "options":[
-            {
-                "optionText":"Country 1",
-                "optionQuote":"",
-                "optionSage":"non_sage",
-                "optionExplanation":"you are a non sage"
-            },
-            {
-                "optionText":"Country 2",
-                "optionQuote":"Chapter 19",
-                "optionSage":"Laozi",
-                "optionExplanation":"It is the prioritization of good that leads to the destabilization of society. The Taoist Sage avoids this, and prefers society that supports all equally without discrimination"
-            }            
-            ]
-    },
-    {
-        "senario":"While using your computer to edit some functions, your colleague made a mistake and accidentally deleted the code repository, invalidating the work of everyone else. Before you could say anything, your colleague throws you under the bus, claiming that it was entirely your fault for deleting the code repository, and feigns anguish toward you.",
-        "senarioNo":10,
-        "options":[
-            {
-                "optionText":"Fervently deny allegations and reveal the truth",
-                "optionQuote":"",
-                "optionSage":"non_sage",
-                "optionExplanation":"you are a non sage"
-            },
-            {
-                "optionText":"Accept what they say without bothering to refute them, instead focusing on attempting to restore the code repository",
-                "optionQuote":"Dao De Jing Chapter 22",
-                "optionSage":"Laozi",
-                "optionExplanation":""
-            }            
-            ]
-    },
-    {
-        "senario":"You are the chief executive officer of a small but growing company. There is an opportunity to expand the company by merging it with a larger company, but to do so would involve large amounts of borrowing and manpower cuts after the merger. (Reference to Capital Cities-ABC merger, 1984-1986)",
-        "senarioNo":11,
-        "options":[
-            {
-                "optionText":"Focus on keeping your employees employed and not pursue the merger",
-                "optionQuote":"Mencius 1A7 “An enlightened ruler will regulate the people’s livelihood so as to ensure that, above, they have enough to serve their parents and, below, they have enough to support their wives and children.”",
-                "optionSage":"Mencius",
-                "optionExplanation":"An enlightened leader would provide a constant means of livelihood to all and act humanely. Doing so would attract people to join the company and the company’s business partners to do business with the company."
-            },
-            {
-                "optionText":"Pursue the merger.",
-                "optionQuote":"",
-                "optionSage":"non_sage",
-                "optionExplanation":"you are a non sage"
-            }            
-            ]
-    },
-    {
-        "senario":"You will be initiating a Capstone project with an external company, which allows you to select your own team members. You have recruited some trusted friends into your group, but you can afford to recruit more team members. Your friend recommends a person to join the team, but you do not know the person personally.",
-        "senarioNo":12,
-        "options":[
-            {
-                "optionText":"Trust your friend and allow the person to join the group.",
-                "optionQuote":"",
-                "optionSage":"non_sage",
-                "optionExplanation":"you are a non sage"
-            },
-            {
-                "optionText":"Do not believe your friend and perform your own investigations to ascertain the ability of the person before allowing him or her to join the group.",
-                "optionQuote":"Mencius 1B7 “When those on the left and right all say that someone is worthy, one should not yet believe it. When the great officers all say he is worthy, one should not yet believe it. When the great officers all say he is worthy, one should not yet believe it. WHen all the people in the state say he is worthy, then one should investigate, and if one finds that he is worthy, only then should one employ him.”",
-                "optionSage":"Mencius",
-                "optionExplanation":"The leader chooses team members on the basis of their worthiness. Since he or she cannot be expected to know everyone, the leader must be cautious when doing so."
-            }            
-            ]
-    },
-    {
-        "senario":"You received a flyer advertising a factory for sale. You know your friend works at that factory, and it is likely that he would have lost his job after the factory was listed for sale. You have a manufacturing business and are looking for a factory to expand your operations. (Reference to Chobani)",
-        "senarioNo":13,
-        "options":[
-            {
-                "optionText":"Tour the factory and consider purchasing it without consulting your friend who works there.",
-                "optionQuote":"",
-                "optionSage":"non_sage",
-                "optionExplanation":"you are a non sage"
-            },
-            {
-                "optionText":"Tour the factory and consider purchasing it only after consulting your friend who works there.",
-                "optionQuote":"Mencius 1B10 “If taking it will cause the people of Yan to be pleased, then take it. Among the men of antiquity there was one who did this: King Wu. If taking it will cause the people of Yan to be displeased, then do not take it. Among the men of antiquity there was one who did this: King Wen.”",
-                "optionSage":"Mencius",
-                "optionExplanation":"While being a leader accords one with power and respect, it is important for the leader to act humanely and proceed only when the situation is in one’s favour."
-            }            
-            ]
-    },
-    {
-        "senario":"You are a leader of a small bike gang, and the territory of your bike gang is surrounded by two larger bike gangs. As there is a chance that a larger conflict will occur in the near future, it would be good to form an alliance with either one of the bike gangs.",
-        "senarioNo":14,
-        "options":[
-            {
-                "optionText":"Form an alliance with either one of the bike gangs.",
-                "optionQuote":"",
-                "optionSage":"non_sage",
-                "optionExplanation":"you are a non sage"
-            },
-            {
-                "optionText":"Build up your own defences as you should rely on your gang to defend themselves.",
-                "optionQuote":"Mencius 1B13 Duke Wen of Teng asked, “Teng is a small state that lies between Qi and Chu. Should it serve Qi, or should it serve Chu?” Mencius replied, “This is not something that lies within my competence, but if you insist on counsel, there is one thing to be said. Dig deep moats and build high walls; defend them together with the people. If, even in the face of death, the people do not leave you, this will show that your actions were right.”",
-                "optionSage":"Mencius",
-                "optionExplanation":"A true leader would fight to the end with his or her own means without relying on external support."
-            }            
-            ]
-    },
-    {
-        "senario":"Your business rival is accumulating large amounts of capital. It seems as though they are ready to acquire your company.",
-        "senarioNo":15,
-        "options":[
-            {
-                "optionText":"Do nothing, and devote all your time to expanding your business.",
-                "optionQuote":"Mencius 1B14 “Duke Wen of Teng asked, “The people of Qi are on the point of fortifying Xie. I am deeply fearful. What is to be done about this?”...The noble person creates a legacy and hands down a beginning that may be carried on. When it comes to achieving success—that is determined by Heaven. What can you do about Qi? Devote all your strength to being good, that is all.”",
-                "optionSage":"Mencius",
-                "optionExplanation":"A true leader recognises that one often cannot control the action of others, but can choose how he or she reacts to the situation."
-            },
-            {
-                "optionText":"Devote more time to growing your profits so that you can fend off the imminent takeover threat.",
-                "optionQuote":"",
-                "optionSage":"non_sage",
-                "optionExplanation":"you are a non sage"
-            }            
-            ]
-    },
-    {
-        "senario":"You were offered two miracle pills. The first pill offers you the ability to not sleep, but it comes at the cost of one always working and not forgetting what you did in the past. The second pill offers you the ability to always achieve the best outcome in any situation.",
-        "senarioNo":16,
-        "options":[
-            {
-                "optionText":"Take the first pill.",
-                "optionQuote":"Mencius 2A2 “Always be doing something, but without fixation, with a mind inclined neither to forget nor to help things grow.”",
-                "optionSage":"Mencius",
-                "optionExplanation":"As Aristotle remarks, being-at-work keeps things in being. A mind that does not forget and helps things grow would be able to bring out positive change in the world."
-            },
-            {
-                "optionText":"Take the second pill.",
-                "optionQuote":"",
-                "optionSage":"non_sage",
-                "optionExplanation":"you are a non sage"
-            }            
-            ]
-    },
-    {
-        "senario":"As the legal advisor of a company, you were looking through the terms and conditions of some contracts signed by the company and you found a legal loophole in one of them. If exploited, it could lead to huge losses for the company. However, you are thinking of resigning from the company at the same time.",
-        "senarioNo":17,
-        "options":[
-            {
-                "optionText":"Inform the chief executive officer of the legal loophole before resigning.",
-                "optionQuote":"Mencius 2A6 “Mencius said, “All human beings have a mind that cannot bear to see the sufferings of others.”",
-                "optionSage":"Mencius",
-                "optionExplanation":"As a human, no one can bear to see the sufferings of others. Similarly, if one sees that the company’s financial losses would lead to the sufferings of many people, it is only right to prevent it from happening."
-            },
-            {
-                "optionText":"Resign from the company.",
-                "optionQuote":"",
-                "optionSage":"non_sage",
-                "optionExplanation":"you are a non sage"
-            }            
-            ]
-    },
-    {
-        "senario":"It has been about one year since graduation and you have met up with your friends from university. The past year has been difficult for you, and you managed to find a job, albeit a low-paying one, and have managed to eke out a living despite the unfavourable circumstances. The topic is now about everyone’s jobs.",
-        "senarioNo":18,
-        "options":[
-            {
-                "optionText":"Take a more self-critical position and blame your current circumstances on not having worked hard enough in university.",
-                "optionQuote":"",
-                "optionSage":"non_sage",
-                "optionExplanation":"you are a non sage"
-            },
-            {
-                "optionText":"Take a more self-reflecting position and inform everyone on your efforts to improve yourself daily despite not starting off well.",
-                "optionQuote":"Mencius 2A7 “To be the servant of others yet ashamed of his service is like the maker of bows who is ashamed of making bows or the maker of arrows who is ashamed of making arrows. If one is ashamed of this, there is nothing better than to be humane. One who would be humane is like the archer. The archer corrects his position and then shoots. If he shoots and misses he does not blame those who are more adept than he; rather, he turns within and seeks within himself.”",
-                "optionSage":"Mencius",
-                "optionExplanation":"One should not derive his or her social status from the salary that he or she is earning per month. As such, there is nothing to be ashamed of earning less than that or your peers. While one may be dealt with a bad starting hand, it is how one makes do with the circumstances which determines one’s success."
-            }            
-            ]
-    },
-    {
-        "senario":"You have met someone of the opposite gender that you are interested in, but the person does not show any romantic interest in you.",
-        "senarioNo":19,
-        "options":[
-            {
-                "optionText":"Examine your own daily behaviour and try to improve yourself first.",
-                "optionQuote":"Mencius 4A4 “Mencius said, “If one loves others and yet they show no affection in return, he should turn within and examine his own humaneness.”",
-                "optionSage":"Mencius",
-                "optionExplanation":"Love, like all relationships, is a two-way street. There is no point in giving freely if doing so results in one being hurt. It would be more practical to focus on self-improvement so that you will be a better partner when the appropriate person appears in your life."
-            },
-            {
-                "optionText":"senario 4 option 2",
-                "optionQuote":"",
-                "optionSage":"non_sage",
-                "optionExplanation":"you are a non sage"
-            }            
-            ]
-    },
-    {
-        "senario":"You witnessed someone of the opposite gender drowning in the swimming pool. However, the laws of your land forbid physical contact with the opposite gender.",
-        "senarioNo":20,
-        "options":[
-            {
-                "optionText":"Get someone of the opposite gender to save the drowning person.",
-                "optionQuote":"",
-                "optionSage":"non_sage",
-                "optionExplanation":"you are a non sage"
-            },
-            {
-                "optionText":"Save the drowning person by yourself, while fully accepting any consequences that will happen to yourself.",
-                "optionQuote":"Mencius 4A17 “Chunyu Kun said, “Is it a matter of ritual propriety that, in giving and receiving things, men and women should not touch one another?” Mencius said, “This is according to ritual.”“If one’s sister-in-law is drowning, may one save her with his Hand?” “If one’s sister-in-law were drowning and one did not save her, one would be a wolf. For men and women, in giving and receiving, not to touch one another is according to ritual. To save a sister-in-law from drowning by using one’s hand is a matter of expedience.”",
-                "optionSage":"Mencius",
-                "optionExplanation":"While laws are established as a code of conduct for all people to follow, in emergency cases sometimes it may be necessary to break some of these laws. While doing so, one should be fully accepting of any consequences that may occur for the greater good."
-            }            
-            ]
-    }
-
+[
+  {
+    "senario": "Error",
+    "senarioNo": 999,
+    "options": [
+      {
+        "optionText": "Error option 1",
+        "optionQuote": "Error option 1 quote",
+        "optionSage": "Sage_1",
+        "optionExplanation": "Error option1 explanation"
+      },
+      {
+        "optionText": "Error option 2",
+        "optionQuote": "Error option 2 quote",
+        "optionSage": "Sage_2",
+        "optionExplanation": "Error option2 explanation"
+      }
+    ]
+  },
+  {
+    "senario": "For your final year project, you are placed into a group where you don’t know anyone. From what you know, the project is very time-intensive and will require proper project management to complete well. To ensure the success of the project, you:",
+    "senarioNo": 1,
+    "options": [
+      {
+        "optionText": "Take charge of the project, calling for inputs and keeping everyone on track",
+        "optionQuote": "",
+        "optionSage": "non_sage",
+        "optionExplanation": "While taking charge is an approach that does have its benefits, and is often appreciated in groups lacking initiative, it is not an approach advocated by Lao Tzu. This is because your efforts to initiate may backfire, compared to a relatively passive approach in which you respond only when required (and hence your responses are always timely)."
+      },
+      {
+        "optionText": "Adopt a “Wait-and-See” approach. Let the others initiate, and the group dynamics to form on their own, and respond only when required, while doing what is needed",
+        "optionQuote": "Laozi Chapter 2 Lines 12-20 ## “That is why ## The sage handles affairs by Non-doing, ## And practices teaching by not speaking. ## He lets all things happen but does not initiate, ## Lets them grow but does not possess, ## Gets things done but does not take advantage, ## Achieves his goal but claims no credit. ## Just because he claims no credit, ## His credit does not go away.”",
+        "optionSage": "Laozi",
+        "optionExplanation": "The sage acts by not initiating. In doing so, everything falls into place. By responding only when spoken to, your response is always timely, and your work always in line with the requirements of others. By not initiating, there can be no opposition to what you do, because it is always in response to them, not due to your own personal desires."
+      }
+    ]
+  },
+  {
+    "senario": "As part of a new policy, students may now influence the educational approach taken by the institution. As the head of the student body, 2 policies come into mind, each with its own merit and demerit. Which do you propose to the school?",
+    "senarioNo": 2,
+    "options": [
+      {
+        "optionText": "A Meritocratic system, in which the top research papers, essays, projects, etc. from each subject and co-curricular activity are showcased around the school. Through this you hope to develop a culture of inspiration in which people learn from one another.",
+        "optionQuote": "",
+        "optionSage": "non_sage",
+        "optionExplanation": "The meritocratic system performs well on many metrics, and is indeed a nice place for those who love excitement, growth, new opportunities and development. However, Lao Tzu regards such systems to be a cause for many social problems, since the valuing of one group of people necessarily means the putting down of other groups, eg. students who don’t perform well."
+      },
+      {
+        "optionText": "A Support system, in which every student is supported equally to do whatever they wish. School ends earlier, and students are encouraged to go home rather than stay in school. The teachers are encouraged to spend less time on the curriculum, and more about what brings contentment to their life.",
+        "optionQuote": "Laozi Chapter 3 Lines 1-2, 7-15: ## “Do not glorify the talented## So the common people will not contend”## ## “Thus the sage through his governance## Keeps their minds empty,## Their bellies full,## Their wills weak,## Their bones strong,## He always keeps his people away from knowledge and desire,## So that the knowledgeable ones do not dare to act.## Apply Non-doing## And there is nothing that he cannot govern”",
+        "optionSage": "Laozi",
+        "optionExplanation": "This option is Taoist because it gives the students what they need in their life - the support they need to flourish - rather than aiming to increase their knowledge and desire. By not glorifying the talented, no group of people are praised over another group, and so the school will become a peaceful place free from competition. A peaceful place is one in which Lao Tzu approves, and would be the most stable in the long run."
+      }
+    ]
+  },
+  {
+    "senario": "You discover that your family has flouted the Stay-Home-Notice rules, violating the COVID-19 pandemic laws. The hotel is currently beginning investigations, you decide to:",
+    "senarioNo": 3,
+    "options": [
+      {
+        "optionText": "Report your family to them",
+        "optionQuote": "Dao De Jing Chapter 5 Lines 1-4: ## “Heaven and Earth are not humane, ## They treat all things like straw dogs. ## The sage is not humane, ## He treats all people like straw dogs” ##  ## Dao De Jing Chapter 8 Lines 1-4: ## “The highest good is like water: ## Water brings good to all things and does not contend; ## It goes to places which most people detest ## And is therefore akin to Dao”",
+        "optionSage": "Laozi",
+        "optionExplanation": "The sage, to Lao Tzu, regards all beings impartially. Thus Lao Tzu would agree that a sage they would report their family, without differentiating them from others. It can even be said to be for their own good, since admitting to a crime does result in lighter punishments.. The sage in this way is like water, bringing good to the family, yet in this action also leads them to place themselves in a detestable position."
+      },
+      {
+        "optionText": "Not report your family to them",
+        "optionQuote": "Confucius Analects 13.18 ## A father covers for his son, and a son covers for his father. And being true lies in this",
+        "optionSage": "Confucius",
+        "optionExplanation": "For the Confucian sage, the son acts for his father’s good, which in turn, becomes the good of society. In other words, such deception is bad, but it is excusable if it can bring about some good (in this case it brings good to one’s family)."
+      }
+    ]
+  },
+  {
+    "senario": "You find yourself being disliked by the majority of your class - you do not mix well with them and their conversation topics do not interest you - you decide to:",
+    "senarioNo": 4,
+    "options": [
+      {
+        "optionText": "Reflect hard on why they dislike you. Develop your skills and expertise, while correcting your flaws",
+        "optionQuote": "Mencius 2A7 ## “To be the servant of others yet ashamed of his service is like the maker of bows who is ashamed of making bows or the maker of arrows who is ashamed of making arrows. ## If one is ashamed of this, there is nothing better than to be humane. ## One who would be humane is like the archer. ## The archer corrects his position and then shoots. ## If he shoots and misses he does not blame those who are more adept than he; rather, he turns within and seeks within himself.”",
+        "optionSage": "Mencius",
+        "optionExplanation": "One should not derive his or her social status from the number of friends he or she has. As such, there is nothing to be ashamed of being disliked. While one may be dealt with a bad starting hand, it is how one makes do with the circumstances which determines one’s success. Thus a Confucian Sage takes a more self-reflective approach."
+      },
+      {
+        "optionText": "Mix with your fellow ostracised classmates. Remain amicable and support whoever comes to you for help.",
+        "optionQuote": "Dao De Jing Chapter 8 ## “The highest good is like water: ## Water brings good to all things and does not contend; ## It goes to places which most people detest ## And is therefore akin to Dao ##  ## Dwell on good ground; ## Meditate in good depth; ## Keep good company; ## Speak in good faith; ## Rule with good policy; ## Serve with good competence; ## Act with good timing. ##  ## Because there is no contention. ## There is no blame.”",
+        "optionSage": "Laozi",
+        "optionExplanation": "The sage is akin to Dao in that he resides in places which most people detest. Yet, he maintains a gentle countenance, speaking in good faith, acting with good timing, and not competing with others. Thus the 2nd answer which does not discriminate is the Taoist Sage’s answer."
+      }
+    ]
+  },
+  {
+    "senario": "When you were young, you sought to live a life of comfort, and to do so you worked very hard. After many years, you have finally become a millionaire, and have earned enough to live comfortably for the rest of your life. You decide to:",
+    "senarioNo": 5,
+    "options": [
+      {
+        "optionText": "Continue working",
+        "optionQuote": "Mencius 2A2 ## “Always be doing something, but without fixation, with a mind inclined neither to forget nor to help things grow.”",
+        "optionSage": "Mencius",
+        "optionExplanation": "You should not retire, but rather keep working, except now without fixation since you are no longer concerned with the money you earn here. The Confucian Sage would see that it is not a bad thing to continually work, what matters is that one maintains a mindset that is without fixation."
+      },
+      {
+        "optionText": "Retire",
+        "optionQuote": "Dao De Jing Chapter 9 Lines 5-10 ## “Stuffing the hall with gold and jade ## Does not guarantee it will stay secure. ## Turning arrogant after gaining wealth and position ## Brings disaster upon oneself. ## Retire after achieving one’s goal - ## That is the Dao of Heaven”",
+        "optionSage": "Laozi",
+        "optionExplanation": "Contentment is one of the hallmarks of Daoist philosophy. Retiring after you achieve your goal is one example of this. To continue working defeats the purpose, since work was not your goal to begin with. Furthermore, working more does not equate to stability as well, hence for a Daoist Sage it is better to remain prudent."
+      }
+    ]
+  },
+  {
+    "senario": "In your team there is a guy who mixes well with everyone. When looking at the work he has done, you realize he doesn’t do much except talk to the Professors, and keep the energy going in the group to do the homework. You know that a submission is coming up, and that the work will be a challenge to complete. You have a friend who has always wanted to join your group, and since your teacher allows you to change group members between homeworks, you decide to:",
+    "senarioNo": 6,
+    "options": [
+      {
+        "optionText": "Ask everyone if they want to replace him with your friend",
+        "optionQuote": "Mencius 1B7 ## “When those on the left and right all say that someone is worthy, one should not yet believe it.  ## When the great officers all say he is worthy, one should not yet believe it.  ## When the great officers all say he is worthy, one should not yet believe it.  ## When all the people in the state say he is worthy, then one should investigate, and if one finds that he is worthy, only then should one employ him.”",
+        "optionSage": "Mencius",
+        "optionExplanation": "The leader chooses team members on the basis of their worthiness. Since he or she cannot be expected to know everyone, the leader must be cautious when doing so. He or she has to ask everyone in the group what they think about the person before making a decision. A Confucian Sage hence chooses to consult others first before deciding."
+      },
+      {
+        "optionText": "Keep him around",
+        "optionQuote": "Dao De Jing Chapter 11 ## “Thirty spokes converge at the hub: ## Where there is nothing ## There lies what makes the cart useful. ##  ## Mix clay to make a vessel: ## Where there is nothing ## There lies what makes the vessel useful. ##  ## Chisel doors and windows to make a house: ## Where there is nothing ## There lies what makes the house useful. ##  ## Thus things bring benefits; ## Nothingness brings usefulness.",
+        "optionSage": "Laozi",
+        "optionExplanation": "While he appears to be doing nothing concrete, he acts as the glue holding the group dynamics together. The Daoist recognises that the role he plays is just as important as the other team members, and will choose not to replace him."
+      }
+    ]
+  },
+  {
+    "senario": "Due to various reasons, you were transferred into another group. Upon being with the group, you realize they have various issues with group dynamics and work allocation. You decide to:",
+    "senarioNo": 7,
+    "options": [
+      {
+        "optionText": "Take charge and gather each member’s strengths and opinions, before dividing the work accordingly",
+        "optionQuote": "",
+        "optionSage": "non_sage",
+        "optionExplanation": "While taking charge and gathering the opinions of others is always helpful, especially in a team which appears to be lacking initiative, it may not result in a good response, especially since you are new to the group. Furthermore, raising these issues may not help much, since the team may very well already be aware of them. The Daoist Sage focuses on what he needs to do within the group, and through his good performance in his own domain, may eventually be trusted or requested to take on the mantle of leader."
+      },
+      {
+        "optionText": "Ask around and become familiar with the different areas of work that need to be done, helping out wherever you can, without mentioning the group’s issues",
+        "optionQuote": "Dao De Jing Chapter 13 Lines 8-17 ## “The reason why I have disaster ## Is because I have a self. ## If I don’t have a self, ## What disaster do I have? ##  ## Therefore, ## If you care about yourself for the sake of the world, ## You may be charged with the world; ## If you love yourself for the sake of the world, ## You may be entrusted with the world”",
+        "optionSage": "Laozi",
+        "optionExplanation": "To Lao Tzu, being a leader means to fully take care of oneself and try one’s best. Here, the group’s welfare is part of your own welfare, and to take care of yourself is to do your best to fulfil your role first, before helping others. Rather than attempting to take charge and address the issues from the start, it is better to do your best, and work on what it is you need to do. In the process, you may even become the leader of the group, by virtue of doing your own part well and taking care of yourself."
+      }
+    ]
+  },
+  {
+    "senario": "You have landed a stable job with mediocre pay, with little future career advancement prospects. Worrying about your future, you ask 2 of your friends to give you advice. One tells you that the key to success is by putting great effort into hustling, by working on yourself and equipping yourself with a wide variety of skill sets, then pushing yourself every step of the way. He says that it is best to use this job as a stepping stone for greener pastures elsewhere. The other tells you that stability is hard to find. He says not to worry too much or stress over these things, and simply do what you want to do. Rather than hustling, you ought to take care of yourself, remain content, and think about it only when you need to.",
+    "senarioNo": 8,
+    "options": [
+      {
+        "optionText": "Hustle within the company",
+        "optionQuote": "Confucius Analects 1.4 ## Master Zeng said: “Daily I examine my person on three counts.  ## In my undertakings on behalf of other people, have I failed to do my utmost?  ## In my interactions with colleagues and friends, have I failed to make good on my word?  ## In what has been passed on to me, have I failed to carry it into practice?”",
+        "optionSage": "Confucius",
+        "optionExplanation": "The Confucian Sage examines himself daily to ensure that one does his or her utmost, makes good on his or her word and carries what has been passed on into practice. He never stops working, and would hence choose to hustle wherever possible."
+      },
+      {
+        "optionText": "Relax",
+        "optionQuote": "Dao De Jing Chapter 15 ## “Who could calm the muddy till it slowly clears? ## Who could stir the quiet till it slowly revives? ## Those who practice this Dao do not seek fullness. ## Because they do not seek fullness ## They can always rejuvenate themselves”",
+        "optionSage": "Laozi",
+        "optionExplanation": "The Daoist Sage, while careful in his conduct, does not overexert and overextend. In his relaxed approach towards life, in which he does not worry or go beyond what he needs to do, he remains content wherever he is. It is this contentment, where they “do not seek fullness”, that they “can always rejuvenate themselves”, and so lead a good life and do what they need to do. It is also this approach that provides the Daoist Sage the ability to respond well to different situations."
+      }
+    ]
+  },
+  {
+    "senario": "After living in the same country for so long, you have the option to move to another country. Of the 2 countries in which your family is happy to move to, they are each radically different in their approach to life. ## ## Lysteria: A meritocratic society. Everywhere the achievements of great people are shared, and competition abounds. Education is provided to all, and everybody has the chance to succeed. Social safety nets are present for those who fall through the cracks, and they are rated as having one of the highest standards of living in the entire world.## ## Mysteria: A stable society, though slightly backward. There are places of all kinds in this country, from small cities, to villages and farms by the countryside. People follow all manner of religions, and the government supports all its citizens equally. The government does not laud the achievements of anyone, but simply ensures that everyone is well fed with no need to worry about their livelihood.",
+    "senarioNo": 9,
+    "options": [
+      {
+        "optionText": "Lysteria",
+        "optionQuote": "",
+        "optionSage": "non_sage",
+        "optionExplanation": "A meritocratic society lends itself well to prosperity and progress, but even this prosperity and progress comes at the cost of internal competition. Even though everybody is supported such that they do not fall through the cracks, the difference in standards of living, degrees of success, and recognition, form the basis of jealousy and instability. A Daoist would not choose to live in this place, since to them, this mode of governance will not last long and will break down eventually in social strife."
+      },
+      {
+        "optionText": "Mysteria",
+        "optionQuote": "Dao De Jing Chapter 19 ## “Reject sageness and discard knowledge, ## And the common people will benefit hundreds of times. ## Reject humankindness and discard righteousness, ## And the common people will restore familial love. ## Reject smartness and discard profiteering, ## And thieves and robbers will disappear. ## These three are inadequate as mere embellishments. ## Therefore we should tie them to their roots: ## Stay with the plain silk and embrace the pristine timber; ## Reduce selfishness and abstain from desires.",
+        "optionSage": "Laozi",
+        "optionExplanation": "It is the prioritization of good that leads to the destabilization of society. The Daoist mode of governance avoids placing any particular preference for any group of people, and creating any standard by which people ought to abide by, since they’re the cause for opposition and dissent. A society that supports all equally without discrimination would hence be the choice of a Daoist Sage, since it is closest to the Daoist’s ideal mode of governance."
+      }
+    ]
+  },
+  {
+    "senario": "While using your computer to edit some functions, your colleague made a mistake and accidentally deleted the code repository, invalidating the work of everyone else. Before you could say anything, your colleague throws you under the bus, claiming that it was entirely your fault for deleting the code repository, and feigns anguish toward you. This colleague has some clout among your colleagues, and you know that it will be hard trying to prove your innocence.",
+    "senarioNo": 10,
+    "options": [
+      {
+        "optionText": "Fervently deny allegations and argue back.",
+        "optionQuote": "",
+        "optionSage": "non_sage",
+        "optionExplanation": "To deny allegations and argue back is a good response - in what world would anyone like to be maligned? Yet this response may change situations for the worse for yourself, in particular your place in the company, since the scenario is in his favour. If the situation is escalated, you might even end up fired, putting yourself in a far more precarious situation. If it goes to the level of a lawsuit, you may win the case, but your position in the company may be affected until after the lawsuit is concluded, making your life more miserable than it has to be."
+      },
+      {
+        "optionText": "Accept what they say without bothering to refute them, instead focusing on attempting to restore the code repository",
+        "optionQuote": "Dao De Jing Chapter 22 ## “Warped therefore intact; ## Bent therefore straight; ## Hollowed therefore abundant; ## Used therefore renewed; ## Little therefore much; ## Too much therefore befuddled. ##  ## That is why ## The sage, adhering to the One, ## Is a model to the world. ## He does not exhibit himself ## And is therefore apparent; ## He does not justify himself ## And is therefore self-evident; ## He does not brag ## And therefore earns credit; ## He is not arrogant ## And therefore lasts long. ##  ## Just because he does not contend, ## So the world cannot contend with him. ## When the ancients said, “Warped therefore intact,” ## It was no empty talk. ## For truly the whole returns intact.”",
+        "optionSage": "Laozi",
+        "optionExplanation": "Arguing and fighting to prove your point may make things worse before they become better. It sours relationships, and people are never happy when you argue with them, even if you are in the right. In this case where it is easy to devolve into a “he said, she said” type of argument, which does not end well. Thus the Daoist Sage would choose not to justify themselves, instead making their stance clear, and simply doing what needs to be done. In this way, the Daoist Sage preserves themselves in the social context - in which by refraining from fighting, they preserve their energy to do what matters, ie restoring the code repository. This may even enhance your reputation."
+      }
+    ]
+  },
+  {
+    "senario": "You are the chief executive officer of a small but growing company. There is an opportunity to expand the company by merging it with a larger company, but to do so would involve large amounts of borrowing and manpower cuts after the merger.",
+    "senarioNo": 11,
+    "options": [
+      {
+        "optionText": "Focus on keeping your employees employed and not pursue the merger",
+        "optionQuote": "Mencius 1A7 ## “An enlightened ruler will regulate the people’s livelihood so as to ensure that, above, they have enough to serve their parents and, below, they have enough to support their wives and children.”",
+        "optionSage": "Mencius",
+        "optionExplanation": "An enlightened leader would provide a constant means of livelihood to all and act humanely. Doing so would attract people to join the company and the company’s business partners to do business with the company."
+      },
+      {
+        "optionText": "Pursue the merger.",
+        "optionQuote": "",
+        "optionSage": "non_sage",
+        "optionExplanation": " Pursuing the merger prioritises money over your employees, which may worsen the company’s situation rather than helping it. It would also come at the cost of the employees working under you."
+      }
+    ]
+  },
+  {
+    "senario": "You will be initiating a Capstone project with an external company, which allows you to select your own team members. You have recruited some trusted friends into your group, but you can afford to recruit more team members. Your friend recommends a person to join the team, but you do not know the person personally.",
+    "senarioNo": 12,
+    "options": [
+      {
+        "optionText": "Trust your friend and allow the person to join the group.",
+        "optionQuote": "",
+        "optionSage": "non_sage",
+        "optionExplanation": "While it is good to trust your trusted friends, the Confucian Sage is one who performs his own investigation and does not accept the conclusions of others blindly."
+      },
+      {
+        "optionText": "Do not believe your friend and perform your own investigations to ascertain the ability of the person before allowing him or her to join the group.",
+        "optionQuote": "Mencius 1B7 ## “When those on the left and right all say that someone is worthy, one should not yet believe it.  ## When the great officers all say he is worthy, one should not yet believe it.  ## When all the people in the state say he is worthy, then one should investigate, and if one finds that he is worthy, only then should one employ him.” ",
+        "optionSage": "Mencius",
+        "optionExplanation": "The leader chooses team members on the basis of their worthiness. Since he or she cannot be expected to know everyone, the leader must be cautious when doing so."
+      }
+    ]
+  },
+  {
+    "senario": "You received a flyer advertising a factory for sale. You know your friend works at that factory, and it is likely that he would have lost his job after the factory was listed for sale. You have a manufacturing business and are looking for a factory to expand your operations.",
+    "senarioNo": 13,
+    "options": [
+      {
+        "optionText": "Tour the factory and consider purchasing it without consulting your friend who works there.",
+        "optionQuote": "",
+        "optionSage": "non_sage",
+        "optionExplanation": "While it is nice to surprise your friend, you do not know what it is he actually wants. 2 things might result - a pleasant surprise, or a painful shock. The Confucian Sage would instead err on the side of caution and only decide upon receiving his approval, provided the factory is worth buying to begin with."
+      },
+      {
+        "optionText": "Tour the factory and consider purchasing it only after consulting your friend who works there.",
+        "optionQuote": "Mencius 1B10 ## “If taking it will cause the people of Yan to be pleased, then take it.  ## Among the men of antiquity there was one who did this: King Wu.  ## If taking it will cause the people of Yan to be displeased, then do not take it.  ## Among the men of antiquity there was one who did this: King Wen.”",
+        "optionSage": "Mencius",
+        "optionExplanation": "While being a leader accords one with power and respect, it is important for the leader to act humanely and proceed only when the situation is in one’s favour."
+      }
+    ]
+  },
+  {
+    "senario": "You are a leader of a small bike gang, and the territory of your bike gang is surrounded by two larger bike gangs. As there is a chance that a larger conflict will occur in the near future, it would be good to form an alliance with either one of the bike gangs.",
+    "senarioNo": 14,
+    "options": [
+      {
+        "optionText": "Form an alliance with either one of the bike gangs.",
+        "optionQuote": "",
+        "optionSage": "non_sage",
+        "optionExplanation": "Merger may be a good choice, in that it strengthens one of the two gangs and may prevent conflict in the future. The Confucian Sage would disagree because you tether your fate to whoever you ally with."
+      },
+      {
+        "optionText": "Build up your own defences as you should rely on your gang to defend themselves.",
+        "optionQuote": "Mencius 1B13 ## Duke Wen of Teng asked, “Teng is a small state that lies between Qi and Chu.  ## Should it serve Qi, or should it serve Chu?” ##  ## Mencius replied, “This is not something that lies within my competence, but if you insist on counsel, there is one thing to be said.  ## Dig deep moats and build high walls; defend them together with the people.  ## If, even in the face of death, the people do not leave you, this show that your actions were right.”",
+        "optionSage": "Mencius",
+        "optionExplanation": "A true leader would fight to the end with his or her own means without relying on external support. The Confucian approach (according to Mencius) would be to ensure you are well protected, without relying upon others."
+      }
+    ]
+  },
+  {
+    "senario": "Your business rival is accumulating large amounts of capital. It seems as though they are ready to acquire your company.",
+    "senarioNo": 15,
+    "options": [
+      {
+        "optionText": "Do nothing, and devote all your time to expanding your business.",
+        "optionQuote": "Mencius 1B14 ## “Duke Wen of Teng asked, “The people of Qi are on the point of fortifying Xie. I am deeply fearful. What is to be done about this?” ## ... ## The noble person creates a legacy and hands down a beginning that may be carried on. When it comes to achieving success—that is determined by Heaven. What can you do about Qi? Devote all your strength to being good, that is all.”",
+        "optionSage": "Mencius",
+        "optionExplanation": "A true leader recognises that one often cannot control the action of others, but can choose how he or she reacts to the situation. He does his best regardless of how the circumstances appear at the moment."
+      },
+      {
+        "optionText": "Devote more time to growing your profits so that you can fend off the imminent takeover threat.",
+        "optionQuote": "Dao De Jing Chapter 13 Lines 8-17## “The reason why I have disaster## Is because I have a self.## If I don’t have a self,## What disaster do I have?## ## Therefore,## If you care about yourself for the sake of the world,## You may be charged with the world;## If you love yourself for the sake of the world,## You may be entrusted with the world”## ",
+        "optionSage": "Laozi",
+        "optionExplanation": "The Daoist Sage guards himself well. He becomes a leader precisely because he can protect himself and his own interests. He would thus choose to guard against the threat."
+      }
+    ]
+  },
+  {
+    "senario": "You feel that the best way to become a good person is to:",
+    "senarioNo": 16,
+    "options": [
+      {
+        "optionText": "Simply live your life attentive and mindful",
+        "optionQuote": "Mencius 2A2 ## “Always be doing something, but without fixation, with a mind inclined neither to forget nor to help things grow.”",
+        "optionSage": "Mencius",
+        "optionExplanation": "As Aristotle remarks, being-at-work keeps things in being. A mind that does not forget and helps things grow would be able to bring out positive change in the world. It is the non-fixated, attentive mind that enables one to become good, rather than any particular wilful action. This also happens to be a method of practice that can be done continuously throughout the day."
+      },
+      {
+        "optionText": "Reflect on what it means to be a good person, and abide by it day and night",
+        "optionQuote": "",
+        "optionSage": "non_sage",
+        "optionExplanation": "Reflection on what good is, and acting correspondingly, is the way in which many of us understand what goodness entails. However, this is not an active practice, and cannot be cultivated continuously throughout the day. Thus it is not the Confucian Sage’s approach to cultivating good."
+      }
+    ]
+  },
+  {
+    "senario": "As the legal advisor of a company, you were looking through the terms and conditions of some contracts signed by the company and you found a legal loophole in one of them. If exploited, it could lead to huge losses for the company. However, you are thinking of resigning from the company at the same time.",
+    "senarioNo": 17,
+    "options": [
+      {
+        "optionText": "Inform the chief executive officer of the legal loophole before resigning.",
+        "optionQuote": "Mencius 2A6 ## “Mencius said, “All human beings have a mind that cannot bear to see the sufferings of others.” ##  ## Dao De Jing Chapter 8 ## “The highest good is like water: ## Water brings good to all things and does not contend; ## It goes to places which most people detest ## And is therefore akin to Dao ##  ## Dwell on good ground; ## Meditate in good depth; ## Keep good company; ## Speak in good faith; ## Rule with good policy; ## Serve with good competence; ## Act with good timing. ##  ## Because there is no contention. ## There is no blame.”",
+        "optionSage": "MenciusAndLaozi",
+        "optionExplanation": "To a Confucian Sage, no one can bear to see the sufferings of others. Similarly, if one sees that the company’s financial losses would lead to the sufferings of many people, it is only right to prevent it from happening. A Daoist Sage would respond in a similar fashion, since they would support and help everyone impartially."
+      },
+      {
+        "optionText": "Resign from the company.",
+        "optionQuote": "",
+        "optionSage": "non_sage",
+        "optionExplanation": "The company may be a place you dislike. Furthermore, you are not obligated to help them at all, thus there is nothing bad about picking this option. Nonetheless, the Sage would choose to help them as far as they are able."
+      }
+    ]
+  },
+  {
+    "senario": "It has been about one year since graduation and you have met up with your friends from university. The past year has been difficult for you, and you managed to find a job, albeit a low-paying one, and have managed to eke out a living despite the unfavourable circumstances. The topic is now about everyone’s jobs.",
+    "senarioNo": 18,
+    "options": [
+      {
+        "optionText": "Take a more self-critical position and blame your current circumstances on not having worked hard enough in university.",
+        "optionQuote": "",
+        "optionSage": "non_sage",
+        "optionExplanation": "It may be true that you didn’t work hard enough in university, and is a nice response if you wish to crack a joke, but it is also self-deprecating. A Confucian Sage would not respond in this way, since they do not judge others and themselves by their status, but instead their character and humaneness."
+      },
+      {
+        "optionText": "Take a more self-reflecting position and inform everyone on your efforts to improve yourself daily despite not starting off well.",
+        "optionQuote": "Mencius 2A7 ## “To be the servant of others yet ashamed of his service is like the maker of bows who is ashamed of making bows or the maker of arrows who is ashamed of making arrows.  ## If one is ashamed of this, there is nothing better than to be humane.  ## One who would be humane is like the archer.  ## The archer corrects his position and then shoots.  ## If he shoots and misses he does not blame those who are more adept than he; rather, he turns within and seeks within himself.”",
+        "optionSage": "Mencius",
+        "optionExplanation": "One should not derive his or her social status from the salary that he or she is earning per month. As such, there is nothing to be ashamed of earning less than that or your peers. While one may be dealt with a bad starting hand, it is how one makes do with the circumstances which determines one’s success."
+      }
+    ]
+  },
+  {
+    "senario": "You try your best to care for others and help those around you, but they don’t reciprocate, neither are they interested in being friends with you.",
+    "senarioNo": 19,
+    "options": [
+      {
+        "optionText": "Examine your own daily behaviour and try to improve yourself first.",
+        "optionQuote": "Mencius 4A4 ## “Mencius said, “If one loves others and yet they show no affection in return, he should turn within and examine his own humaneness.”",
+        "optionSage": "Mencius",
+        "optionExplanation": "Friendships, like all relationships, is a two-way street. If people are not interested in being friends with you, it is likely to be a fault of your own character. Thus, a Confucian Sage would decide to reflect on themselves, rather than blaming those around them."
+      },
+      {
+        "optionText": "Find people who have common interests with you. Not everyone will like you after all.",
+        "optionQuote": "",
+        "optionSage": "non_sage",
+        "optionExplanation": "A perfectly good and fair response - since it is true that not everybody will like you in life. Rather than wasting your time changing yourself for people who won’t accept you, it is better to seek those who are like you. The Confucian Sage, however, would opt rather on the path of reflection and change himself."
+      }
+    ]
+  },
+  {
+    "senario": "You witnessed someone of the opposite gender having a heart attack and needs to be resuscitated with CPR. You know CPR. No one else is around. However, the laws of your land forbid physical contact with the opposite gender. ",
+    "senarioNo": 20,
+    "options": [
+      {
+        "optionText": "Run and find someone of the opposite gender to save them.",
+        "optionQuote": "",
+        "optionSage": "non_sage",
+        "optionExplanation": "The laws are laws, it is fair to choose not to break them. But every second you take looking for another person to help is a smaller chance that you may be able to save them. The Confucian Sage would not take this risk."
+      },
+      {
+        "optionText": "Save the drowning person by yourself, while fully accepting any consequences that will happen to yourself.",
+        "optionQuote": "Mencius 4A17 ## “Chunyu Kun said, “Is it a matter of ritual propriety that, in giving and receiving things, men and women should not touch one another?” ##  ## Mencius said, “This is according to ritual.” ##  ## “If one’s sister-in-law is drowning, may one save her with his Hand?” ##  ## “If one’s sister-in-law were drowning and one did not save her, one would be a wolf. For men and women, in giving and receiving, not to touch one another is according to ritual. To save a sister-in-law from drowning by using one’s hand is a matter of expedience.”",
+        "optionSage": "Mencius",
+        "optionExplanation": "While laws are established as a code of conduct for all people to follow, in emergency cases sometimes it may be necessary to break some of these laws. While doing so, one should be fully accepting of any consequences that may occur in acting for the greater good."
+      }
+    ]
+  }
 ]

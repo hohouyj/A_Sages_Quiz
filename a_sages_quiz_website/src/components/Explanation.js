@@ -1,7 +1,5 @@
 import React from "react"
 import {Link} from "react-router-dom"
-import {changeSenarioNo} from "../services/logic"
-import NextIcon from '@material-ui/icons/NavigateNext'
 import Button from '@material-ui/core/Button'
 import {makeStyles, ThemeProvider, createMuiTheme} from '@material-ui/core/styles'
 import {orange,green} from '@material-ui/core/colors'
@@ -11,23 +9,28 @@ import Grid from '@material-ui/core/Grid'
 import CssBaseline from '@material-ui/core/CssBaseline';
 import AppBar from'@material-ui/core/AppBar'
 import '../styling/style.css'
-import CameraIcon from '@material-ui/icons/PhotoCamera';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Toolbar from '@material-ui/core/Toolbar';
 import Container from '@material-ui/core/Container';
-import {updateSageScore , decideContent} from '../services/logic'
 import Paper from '@material-ui/core/Paper'
 import Image from '../images/horsey.PNG';
+import StartImage from '../images/vinegar_taste.jpg';
+import Menke from '../images/menke.jpg';
+import LaoziImage from '../images/laozi.png';
+import Kongzi from '../images/kongzi.jpg'
+import Chad from '../images/chad1.jpg'
+
+
 export const useStyles = makeStyles((theme) => ({
     icon: {
         marginRight: theme.spacing(2),
       },
       heroContent: {
         backgroundColor: theme.palette.background.paper,
-        padding: theme.spacing(8, 0, 6),
+        padding: theme.spacing(5, 0, 3),
       },
       heroButtons: {
         marginTop: theme.spacing(4),
@@ -36,11 +39,6 @@ export const useStyles = makeStyles((theme) => ({
         paddingTop: theme.spacing(8),
         paddingBottom: theme.spacing(8),
         flexDirection: 'row',
-        //backgroundImage: `url(${Image})`,
-        backgroundRepeat: 'repeat',
-        backgroundColor: theme.palette.type === 'light' ? theme.palette.grey[50] : theme.palette.grey[900],
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
       },
       card: {
         height: '100%',
@@ -99,6 +97,31 @@ export const useStyles = makeStyles((theme) => ({
     backgroundColor: 'pink',
     },
     appbar: theme.mixins.toolbar,
+    menciusImage:{
+      backgroundImage: `url(${Menke})`,
+      backgroundRepeat: 'no-repeat',
+      backgroundColor:
+        theme.palette.type === 'light' ? theme.palette.grey[50] : theme.palette.grey[900],
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+    },
+    laoziImage:{
+      backgroundImage: `url(${LaoziImage})`,
+      backgroundRepeat: 'no-repeat',
+      backgroundColor:
+        theme.palette.type === 'light' ? theme.palette.grey[50] : theme.palette.grey[900],
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+    },
+    confuciusImage:{
+      backgroundImage: `url(${Kongzi})`,
+      backgroundRepeat: 'no-repeat',
+      backgroundColor:
+        theme.palette.type === 'light' ? theme.palette.grey[50] : theme.palette.grey[900],
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+    }
+
 }));
 
 export const theme = createMuiTheme({
@@ -114,106 +137,88 @@ export const theme = createMuiTheme({
 })
 
 export default function Explanation(option){
-    var nextSenarioNo = option.location.state.senarioNo + 1
     var scores = localStorage.getItem("sageScore")
     var senariosTracker = localStorage.getItem("senarios")
-    var currSenarioNo = parseInt(JSON.parse(senariosTracker).currSenarioNo)
+    var currSenarioNo = parseInt(option.location.state.senarioNo)
     var totalSenarios = parseInt(JSON.parse(senariosTracker).totalSenarios)
-    
+    var sageName = option.location.state.optionSage
+    var completedSenariosNo = parseInt( new Set(JSON.parse(senariosTracker).completedSenarios).size)
+
     const classes = useStyles();
-    
-    
-    if (false){
-        return(
-            <div id = "container">
-
-                <div id = "header">
-                <h1>Senario {currSenarioNo}</h1>
-
-                </div>
-            
-            <div id="content">
-                <div id = "quote">
-                <h2>{option.location.state.optionSage} Says</h2>
-                <p>"{option.location.state.optionQuote}"</p>
-                </div>
-
-
-                <div id="explanation">
-                    <h2>Explanation</h2>
-                    <p>{option.location.state.optionExplanation}</p>
-                </div>
-            </div>
-            <Link to={{pathname:"/end"}}>
-            <div className="card" onClick={()=> changeSenarioNo(nextSenarioNo)}>
-                Next
-            </div>
-            </Link>
-            
-           
-            </div>
-        )
-    }else{
-        return(
-            <React.Fragment>
-            <ThemeProvider theme={theme}>
-                
-                    <AppBar position="relative">
-                        <Typography variant="h6" color="inherit" noWrap>
-                        Scenario {currSenarioNo}
-                        </Typography>
-                    </AppBar>
-                    <main>
-                    {/* Hero unit */}
-                    <div className={classes.heroContent}>
-                    <Container maxWidth="md">
-                        <Typography component="h2" variant="h4" align="center" color="textPrimary" gutterBottom>
-                        {(option.location.state.optionSage==='non_sage')?'Not Sagely': 'The Sage Embodied: '+option.location.state.optionSage} 
-                        </Typography>
-                        <Typography variant="h5" align="Left" color="textSecondary" paragraph>
-                        {/*(option.location.state.optionSage==='non_sage')?'': option.location.state.optionQuote*/}
-
-                        { option.location.state.optionQuote.split("##").map((item, key) => {return(
-                            <>
-                            {item}
-                            <br>
-                            {}
-                            </br>
-                            </>
-                            )})}
-
-
-
-                        
-                        </Typography>
-                    </Container>
-                    </div>
-                    <Container className={classes.cardGrid} maxWidth="md">
-                    {/* End hero unit */}
-                            
-                    <Grid container spacing={2}>
+      return(
+          <React.Fragment >
+          <ThemeProvider theme={theme}>
+                  <AppBar position="relative">
+                      <Typography variant="h6" color="inherit" noWrap>
+                      Scenario {currSenarioNo}
+                      </Typography>
+                  </AppBar>
+                  <main>
+                  {/* Hero unit */}
+                  <div className={classes.heroContent}>
+                  <Container maxWidth="md" alignItems="center">
+                      <Typography component="h2" variant="h4" align="center" color="textPrimary" gutterBottom>
+                      {(sageName==='non_sage')?'Not Sagely':''}
+                      {(sageName==='MenciusAndLaozi')?"The Sages Embodied: Mencius and Laozi":''}
+                      {(sageName!=='non_sage'&&sageName!=='MenciusAndLaozi')?'The Sage Embodied: '+option.location.state.optionSage:''}
+                      </Typography>
                    
-                        <Grid item xs={12} sm={12} md={12}>
 
-                        <Link to={{pathname: (currSenarioNo>=totalSenarios) ? '/end':("/senario/"+nextSenarioNo)}} onClick={()=> changeSenarioNo(nextSenarioNo)} style={{ textDecoration: 'none' }}>
-                            
-                            <Card className={classes.card}>
-                            <CardContent >
-                                <Typography gutterBottom variant="h5" component="h2">
-                                {(option.location.state.optionSage==='non_sage')?'The option chosen was not sagely.': option.location.state.optionExplanation} 
-                                </Typography>
-                            </CardContent>
-                            </Card>
-                        </Link>
-                        </Grid>
-                        
+                      <Grid container spacing={2} justify='center'>
+                      <Grid item sm={false} md={6} xl={4}>
+                      {(sageName==='Laozi')?<img src={LaoziImage} alt="noImage" class='media'/>:''}
+                      {(sageName==='Mencius')?<img src={Menke} alt="noImage" class='media'/>:''}
+                      {(sageName==='Confucius')?<img src={Kongzi} alt="noImage" class='media'/>:''}
+                      {(sageName==='MenciusAndLaozi')?<><img src={Menke} alt="noImage" class="media"/><img src={LaoziImage} alt="noImage" class="media"/></>:''}
+                      {(sageName==='non_sage')?<img src={Chad} alt="noImage" class='media'/>:''}
+                      </Grid>
+                      {(option.location.state.optionQuote==='')? '':
+                              <Grid item sm={12} md={6} xl={8}>
+                              <Typography maxWidth="sm" variant="h5" align="Left" color="textSecondary" paragraph >
+                              {/*(option.location.state.optionSage==='non_sage')?'': option.location.state.optionQuote*/}
+
+                              { option.location.state.optionQuote.split("##").map((item, key) => {
+                                
+                                if (item===''){
+                                  return'testtest'
+                                }
+                                else{
+                                return(<>{item}<br></br></>)
+                                }
+                                
+                                })}
+
+                              </Typography>
+                              </Grid>}
+                              
+                      </Grid>
+                  </Container>
+                  </div>
+                  
+                  {/* End hero unit */}
+                  <Container className={classes.cardGrid} maxWidth="md"> 
+                  <Grid container spacing={2} justify='center'>
+                  
+                      <Grid item xs={9} sm={9} md={9} align='center'>
+
+                      <Link to={{pathname: (completedSenariosNo>=totalSenarios) ? '/end':("/senario/"+currSenarioNo)}} style={{ textDecoration: 'none' }}>
+                          
+                          <Card className={classes.card}>
+                          <CardContent >
+                              <Typography variant="h5" component="h2">
+                              {option.location.state.optionExplanation} 
+                              </Typography>
+                          </CardContent>
+                          </Card>
+                      </Link>
+                      </Grid>
+                      
                     </Grid>
                     </Container>
-                    
-                    </main>
-            </ThemeProvider>
-        
-        </React.Fragment>
-        )
+                  
+                  </main>
+          </ThemeProvider>
+      
+      </React.Fragment>
+      )
     }
-}

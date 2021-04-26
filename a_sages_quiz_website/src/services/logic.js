@@ -1,9 +1,33 @@
 import senarios from '../data/Senarios.json';
 
-export const decideContent = (id) => {
-    console.log("ID "+id.toString())
-    console.log(typeof id)
-    var currSenario = senarios[parseInt(id)]
+
+// get random item from a Set
+function getRandomItem(set) {
+    let items = Array.from(set);
+    return items[Math.floor(Math.random() * items.length)];
+}
+
+export const decideContent = () => {
+    let mysenarios = JSON.parse(localStorage.getItem("senarios"))
+    var completed = new Set(mysenarios['completedSenarios'])
+    var totalNo = parseInt(mysenarios['totalSenarios'])
+    var allQns = new Set()
+    for(let i=1;i<=totalNo;++i){
+        allQns.add(i)
+    }
+    var notCompleted = new Set()
+    
+    for(var elem of allQns)
+    {
+        if(!completed.has(elem))
+            notCompleted.add(elem);
+    } 
+    var newSenarioNo = parseInt(getRandomItem(notCompleted))
+    var currSenario = senarios[newSenarioNo]
+    
+    mysenarios.completedSenarios.push(newSenarioNo)
+    mysenarios["currSenarioNo"] = newSenarioNo;
+    localStorage.setItem("senarios", JSON.stringify(mysenarios))
     try {
         return [currSenario.senario, currSenario.senarioNo, currSenario.options]
     } catch (error) {
@@ -15,23 +39,4 @@ export const updateSageScore = (sageName,senarioNo)=>{
     let currentStat = JSON.parse(localStorage.getItem('sageScore'));
     currentStat[sageName].push(senarioNo);
     localStorage.setItem('sageScore', JSON.stringify(currentStat));
-}
-
-export const incrementSageCount = (sageName) => {
-    let currentStat = JSON.parse(localStorage.getItem('sageScore'));
-    currentStat[sageName]++;
-    localStorage.setItem('sageScore', JSON.stringify(currentStat));
-}
-
-
-export const incrementSenarioNo = () =>{
-    let senarios = JSON.parse(localStorage.getItem("senarios"))
-    senarios["currSenarioNo"]++;
-    localStorage.setItem("senarios", JSON.stringify(senarios))
-}
-
-export const changeSenarioNo = (newSenarioNo) =>{
-    let senarios = JSON.parse(localStorage.getItem("senarios"))
-    senarios.currSenarioNo = newSenarioNo;
-    localStorage.setItem("senarios", JSON.stringify(senarios))
 }
