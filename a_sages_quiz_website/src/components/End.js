@@ -195,7 +195,7 @@ export default function End(){
                                 <CardContent >
                                   <img src={Kongzi} alt="" class='media'/>
                                     <Typography component="h2" variant="h4" align="center" color="textPrimary" >
-                                        You found the both Confucian Answers!!
+                                        You found both Confucian Answers!!
                                     </Typography>
                                     
                                 </CardContent>

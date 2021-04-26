@@ -1,5 +1,4 @@
 import React,{useEffect} from "react"
-import {Link} from "react-router-dom"
 import senarios from "../data/Senarios.json"
 import '../styling/style.css'
 import Button from '@material-ui/core/Button'
@@ -7,14 +6,9 @@ import {makeStyles, ThemeProvider, createMuiTheme} from '@material-ui/core/style
 import {orange,green} from '@material-ui/core/colors'
 import Typography from "@material-ui/core/Typography"
 import 'fontsource-roboto'
-import Container from '@material-ui/core/Container'
 import Paper from '@material-ui/core/Paper'
 import Grid from '@material-ui/core/Grid'
 import CssBaseline from '@material-ui/core/CssBaseline';
-import AppBar from'@material-ui/core/AppBar'
-import Toolbar from'@material-ui/core/Toolbar'
-import IconButton from'@material-ui/core/IconButton'
-import Box from '@material-ui/core/Box'
 import Startimage from '../images/vinegar_taste.jpg'
 
 const useStyles = makeStyles((theme) => ({
@@ -95,7 +89,6 @@ export default function Start(){
         }));
     },[]);/*empty array to call use effect function only once*/
 
-    var currSenarioNo = JSON.parse(localStorage.getItem('senarios')).currSenarioNo
 
     return(
         <Grid container component="main" className={classes.root}>
