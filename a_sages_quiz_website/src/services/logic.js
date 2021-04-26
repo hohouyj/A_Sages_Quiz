@@ -11,6 +11,12 @@ export const decideContent = (id) => {
     }
 }
 
+export const updateSageScore = (sageName,senarioNo)=>{
+    let currentStat = JSON.parse(localStorage.getItem('sageScore'));
+    currentStat[sageName].push(senarioNo);
+    localStorage.setItem('sageScore', JSON.stringify(currentStat));
+}
+
 export const incrementSageCount = (sageName) => {
     let currentStat = JSON.parse(localStorage.getItem('sageScore'));
     currentStat[sageName]++;
@@ -21,5 +27,11 @@ export const incrementSageCount = (sageName) => {
 export const incrementSenarioNo = () =>{
     let senarios = JSON.parse(localStorage.getItem("senarios"))
     senarios["currSenarioNo"]++;
+    localStorage.setItem("senarios", JSON.stringify(senarios))
+}
+
+export const changeSenarioNo = (newSenarioNo) =>{
+    let senarios = JSON.parse(localStorage.getItem("senarios"))
+    senarios.currSenarioNo = newSenarioNo;
     localStorage.setItem("senarios", JSON.stringify(senarios))
 }
