@@ -173,6 +173,22 @@ export default function End(){
                                 </Card>
                             </Grid>
                             
+                            <Grid item xs={12} sm={12} md={12}>
+                                
+                                <Card >
+                                <CardContent >
+                                    <Typography component="h2" variant="h4" align="center" color="textPrimary" gutterBottom>
+                                        Mencius Score: {scoreMencius}/{scoreLaozi+scoreMencius+non_sage}
+                                    </Typography>
+                                    <Typography gutterBottom variant="h5" component="h2">
+                                        Options Choosen:
+                                        {}
+                                    </Typography>
+                                </CardContent>
+                                </Card>
+                            </Grid>
+
+
                         </Grid>
                         </Container>
                         <Button href="/" variant="contained" color="primary" size="large" fullWidth > 
