@@ -201,7 +201,7 @@ export default function Explanation(option){
                   
                       <Grid item xs={9} sm={9} md={9} align='center'>
 
-                      <Link to={{pathname: (completedSenariosNo>=totalSenarios) ? '/end':("/senario/"+currSenarioNo)}} style={{ textDecoration: 'none' }}>
+                      <Link to={{pathname: (completedSenariosNo>=totalSenarios) ? '/end':("/senario")}} style={{ textDecoration: 'none' }}>
                           
                           <Card className={classes.card}>
                           <CardContent >
